@@ -1,51 +1,18 @@
-import { useEffect, useReducer, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import Test from './components/Test'
+
 
 
 function App() {
-  const [count, setCount] = useState(5)
-
-  const initialState={cnt:0};
-
-  function reducer(state:any,action:any){}
-
-  const fun=()=>{
-    setCount(count+1);
-  }
-
+ 
   
-
-<Test num={count} fun={fun} />
-
-useEffect(()=>{
-  console.log("hello effect")
-  },[count])
-
+  
+  
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite anasdasdasdd React logos to learn more
-      </p>
     </>
   )
 }
